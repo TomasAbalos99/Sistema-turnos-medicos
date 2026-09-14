@@ -1,6 +1,6 @@
 # 🩺 Gestión de Turnos Médicos
 
-Aplicación web desarrollada como trabajo práctico para la materia **Programación en Nuevas Tecnologías 2**. Permite gestionar turnos médicos con autenticación de usuarios por rol.
+Aplicación web full-stack para la gestión de turnos médicos, con autenticación de usuarios por rol y paneles diferenciados para pacientes, médicos y administradores.
 
 ---
 
@@ -32,44 +32,48 @@ Aplicación web desarrollada como trabajo práctico para la materia **Programaci
 - Sesión persistente con recuperación automática desde Supabase
 - Middleware de protección de rutas (`guards.js`)
 - Navbar dinámico según sesión y rol
-- CRUD de turnos 
-- Visualización de turnos para medicos y pacientes; solo éstos ultimos pueden solicitad un turno.
-- Visualizacion de usuarios, desde sesion del administrador, pudiendo desactivar o activar cualquier cuenta.
-- Visualizacion de reportes (para admins), con al menos 2 graficos integrados calculando estadisticas (PacientexMedico-TurnosxEstado).
-- Visualizacion del perfil del usuario, con la posibilidad de editar campos nombre, telefono y direccion
+- CRUD de turnos
+- Visualización de turnos para médicos y pacientes; solo estos últimos pueden solicitar un turno
+- Visualización de usuarios, desde sesión del administrador, pudiendo desactivar o activar cualquier cuenta
+- Visualización de reportes (para admins), con al menos 2 gráficos integrados calculando estadísticas (Paciente x Médico, Turnos x Estado)
+- Visualización del perfil del usuario, con la posibilidad de editar campos nombre, teléfono y dirección
+
 ---
 
 ## 🛠 Estructura del proyecto
 
 ```bash
 src/
-├── components/ # Navbar, Footer, Carousel,Grafico de turnos
+├── components/ # Navbar, Footer, Carousel, Gráfico de turnos
 ├── views/ # LoginView, RegisterView, TurnosView, etc.
 ├── router/ # Configuración de rutas y guards
-├── services/ # authService.js, usuariosServices.js,turnosServices.js
+├── services/ # authService.js, usuariosServices.js, turnosServices.js
 ├── stores/ # userStore con Pinia
 └── supabaseClient/ # configuración de conexión
 ```
 
-
 ---
 
-##  Para correr el proyecto
+## Para correr el proyecto
 
- Instalar dependencias:
+Instalar dependencias:
 
 ```bash
 npm install
 ```
+
 Correr en desarrollo:
 
 ```bash
 npm run dev
 ```
 
-## DEPLOY
+## Deploy
 
-Deploy en Render, link:
+Deploy en Render:
+
 ```bash
- https://pnt2-trabajo-final.onrender.com/
+https://pnt2-trabajo-final.onrender.com/
+```
+
 
