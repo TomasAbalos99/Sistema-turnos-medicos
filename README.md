@@ -1,6 +1,6 @@
 # 🩺 Gestión de Turnos Médicos
 
-Aplicación web full-stack para la gestión de turnos médicos, con autenticación de usuarios por rol y paneles diferenciados para pacientes, médicos y administradores.
+Aplicación web en Vue 3, con autenticación y persistencia de datos en Supabase, con paneles diferenciados por rol para pacientes, médicos y administradores.
 
 ---
 
